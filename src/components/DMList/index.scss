@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+
+.dm-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    li {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 24px;
+
+      img {
+        height: 48px;
+      }
+
+      span {
+        font-size: 18px;
+        font-family: 'Lato Thin';
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media ($desktop) {
+  .dm-list-wrapper {
+    ul {
+      li {
+        margin-bottom: 60px;
+        width: 33.33%;
+      }
+    }
+  }
+}
