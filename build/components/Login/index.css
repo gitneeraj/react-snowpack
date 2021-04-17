@@ -1,0 +1,44 @@
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-wrapper img {
+  border-radius: 50%;
+  margin-bottom: 12px;
+  width: 100px;
+  box-shadow: -1px 3px 11px -3px rgba(0, 0, 0, 0.74);
+  -webkit-box-shadow: -1px 3px 11px -3px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: -1px 3px 11px -3px rgba(0, 0, 0, 0.74);
+}
+.login-wrapper input[type=text],
+.login-wrapper input[type=password] {
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 8px;
+  background: #5e647225;
+  color: #5e6472;
+  letter-spacing: 0.3px;
+  text-align: center;
+  transition: all 0.2s;
+}
+.login-wrapper input[type=text]:focus,
+.login-wrapper input[type=password]:focus {
+  outline: none;
+  box-shadow: -1px 3px 4px -4px rgba(0, 0, 0, 0.74);
+  -webkit-box-shadow: -1px 3px 4px -4px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: -1px 3px 4px -4px rgba(0, 0, 0, 0.74);
+}
+.login-wrapper input[type=text]::placeholder,
+.login-wrapper input[type=password]::placeholder {
+  color: #5e6472;
+  opacity: 0.5;
+}
+.login-wrapper button {
+  background: transparent;
+  font-size: 30px;
+  color: #5e6472;
+}
+.login-wrapper button:focus {
+  outline: none;
+}

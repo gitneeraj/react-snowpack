@@ -1,0 +1,12 @@
+.go-back {
+  cursor: pointer;
+}
+.go-back .faIcons {
+  margin-right: 4px;
+}
+
+@media (min-width: 992px) {
+  .go-back {
+    margin-top: 80px;
+  }
+}

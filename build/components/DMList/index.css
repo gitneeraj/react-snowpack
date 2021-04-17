@@ -1,0 +1,32 @@
+.dm-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dm-list-wrapper ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.dm-list-wrapper ul li {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.dm-list-wrapper ul li img {
+  height: 48px;
+}
+.dm-list-wrapper ul li span {
+  font-size: 18px;
+  font-family: "Lato Thin";
+  font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  .dm-list-wrapper ul li {
+    margin-bottom: 60px;
+    width: 33.33%;
+  }
+}
