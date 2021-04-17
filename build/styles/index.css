@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Lato Bold";
+  src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato Light";
+  src: url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato Regular";
+  src: url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato Thin";
+  src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Lato Regular", sans-serif;
+}
+
+a {
+  color: #5e6472;
+  text-decoration: none;
+}
+a:focus, a:visited {
+  text-decoration: none;
+}
+
+.sitelayout-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.05fr 1fr 0.05fr;
+  grid-template-areas: "header header" "main main" "footer footer";
+  height: 100vh;
+  font-family: "Lato Regular", sans-serif;
+  background: #b8f2e6;
+  background: -webkit-linear-gradient(top left, #b8f2e6, #faf3dd);
+  background: -moz-linear-gradient(top left, #b8f2e6, #faf3dd);
+  background: linear-gradient(to bottom right, #b8f2e6, #faf3dd);
+  color: #5e6472;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  align-items: center;
+}
+header .faIcons,
+main .faIcons,
+footer .faIcons {
+  color: #5e6472;
+  cursor: pointer;
+}
+header a.selected .faIcons,
+main a.selected .faIcons,
+footer a.selected .faIcons {
+  color: black;
+}
+
+header .faIcons,
+footer .faIcons {
+  font-size: 1.3rem;
+}
+
+header {
+  grid-area: header;
+}
+header #system-info {
+  color: #5e6472;
+}
+
+main {
+  grid-area: main;
+  justify-content: center;
+}
+main .home-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  grid-area: footer;
+}
